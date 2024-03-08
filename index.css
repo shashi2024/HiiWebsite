@@ -1,0 +1,314 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(68, 53, 59);
+ }
+
+.gm{
+    margin-top: 2vh;
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(87, 1, 41);
+    color: aliceblue;
+    font-size: 400%;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    from {left: 0px;}
+    to {left: 35vw;}
+  }
+
+.im img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+}
+
+.img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+
+.im {animation-timing-function: linear;}
+
+@keyframes mymove {
+    from {bottom: 0vh;}
+    to {bottom: 30vh;}
+  }
+
+.im {
+    margin-top: 16vw;
+    flex: 0 0 calc(25% - 16px); /* Adjust the width of each item as needed */
+    overflow: hidden;
+  }
+
+.btn button{
+    padding: .5rem;
+    padding-top: 0rem;
+    background: rgba(125, 125, 126, 0.881);
+    background: rgba(109, 109, 109, 0.5);
+    font-size: 3rem;
+    cursor: pointer;
+    font-style: inherit;
+    font-weight: 800;
+}  
+
+.btn{
+    padding-top: 1vh;
+    margin-left: 50vw;
+}
+
+.wrapper{
+    padding-bottom: 10px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.face-area{
+    width: 10vw;
+    height: 20vh;
+    background: rgba(244, 248, 6, 0.81);
+    position: relative;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    display: block;
+}
+
+.eye-area{
+    width: 2vw;
+    height: 6vh;
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    position: absolute;
+    top: 2vh;
+}
+
+.eye1{
+    left: 6vw;
+}
+
+.eye2{
+    right: 6vw;
+}
+
+.smile-area{
+    width: 6vw;
+    height: 4vh;
+    border: 10px solid #000;
+    border-top: 0;
+    background: #000;
+    border-radius: 0 0 120px 120px / 0 0 90px 90px;
+    -webkit-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+    -moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+    -ms-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+    -o-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+    position: absolute;
+    bottom: 2vh;
+    left: 1.2vw;
+}
+
+@media screen and (max-width: 2100px){
+    @keyframes mymove {
+        from {bottom: 0vh;}
+        to {bottom: 20vh;}
+      }
+
+      .im {
+        margin-top: 14vw;
+        flex: 0 0 calc(25% - 16px); /* Adjust the width of each item as needed */
+        overflow: hidden;
+      } 
+}
+
+@media screen and (max-width: 1520px){
+    @keyframes mymove {
+        from {bottom: 0vh;}
+        to {bottom: 15vh;}
+      }
+
+      .im {
+        margin-top: 12vw;
+        flex: 0 0 calc(25% - 16px); /* Adjust the width of each item as needed */
+        overflow: hidden;
+      } 
+}
+
+@media screen and (max-width: 1050px){
+    @keyframes mymove {
+        from {bottom: 0vh;}
+        to {bottom: 20vh;}
+      }
+
+      .im {
+        margin-top: 25vw;
+        flex: 0 0 calc(25% - 16px); /* Adjust the width of each item as needed */
+        overflow: hidden;
+      } 
+
+     .gm{
+        font-size: 300%;
+     } 
+}
+
+@media screen and (max-width: 820px){
+    @keyframes mymove {
+        from {bottom: 0vh;}
+        to {bottom: 20vh;}
+      }
+
+      .im {
+        margin-top: 40vw;
+        flex: 0 0 calc(25% - 16px); /* Adjust the width of each item as needed */
+        overflow: hidden;
+      } 
+
+     .gm{
+        font-size: 200%;
+     } 
+}
+
+@media screen and (max-width: 520px){
+
+    @keyframes example {
+        from {left: 0px;}
+        to {left: 22vw;}
+      }
+
+    @keyframes mymove {
+        from {bottom: 0vh;}
+        to {bottom: 20vh;}
+      }
+
+      .im {
+        margin-top: 50vw;
+        flex: 0 0 calc(25% - 16px); /* Adjust the width of each item as needed */
+        overflow: hidden;
+      } 
+     
+      .im img{
+        width: 100%;
+      }
+
+     .gm{
+        font-size: 200%;
+        width: 45%;
+     } 
+
+    .img{
+        padding: 1vw;
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .wrapper{
+        padding-bottom: 10px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+    
+    .face-area{
+        width: 25vw;
+        height: 12vh;
+        background: rgba(244, 248, 6, 0.81);
+        position: relative;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        display: block;
+    }
+    
+    .eye-area{
+        width: 4vw;
+        height: 3vh;
+        background: rgb(255, 255, 255);
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        position: absolute;
+        top: .5vh;
+    }
+    
+    .eye1{
+        left: 5vw;
+    }
+    
+    .eye2{
+        right: 5vw;
+    }
+    
+    .smile-area{
+        width: 10vw;
+        height: 2vh;
+        border: 10px solid #000;
+        border-top: 0;
+        background: #000;
+        border-radius: 0 0 120px 120px / 0 0 90px 90px;
+        -webkit-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+        -moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+        -ms-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+        -o-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+        position: absolute;
+        bottom: 1vh;
+        left: 5vw;
+    }
+}
+
+.para1{
+    text-align: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+.para2{
+    text-align: center;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
