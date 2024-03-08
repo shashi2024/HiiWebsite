@@ -306,9 +306,16 @@ body{
     color: aliceblue;
 }
 
-.para2{
+.para2 .p1{
     text-align: center;
     font-size: x-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
+
+.para2 .p2{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: aliceblue;
 }
